@@ -15,6 +15,10 @@ function calFare(km, min) {
     return fare;
 }
 
+function returnHello(){
+    return "hello !";
+}
+
 exports = module.exports = {
-    rate, calFare
+    rate, calFare, returnHello
 }

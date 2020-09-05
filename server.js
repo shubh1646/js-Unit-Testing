@@ -10,8 +10,10 @@ const path = require('path');
  app.use(express.json())
  app.use(express.urlencoded({extended:true}))
 
-app.get("/hello ", (req,res)=>{
-    res.send("hello !")
+app.get("/ ", (req,res)=>{
+    console.log("hello");
+   // let mssg = fareUtils.returnHello();
+   res.send('<h1 style="color:red;">hello world <h1> ')
 })
 
 app.post('/calfare',(req,res)=>{

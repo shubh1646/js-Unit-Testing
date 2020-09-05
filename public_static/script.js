@@ -24,6 +24,7 @@ $(function(){
     btnGetrates.click(function(){
         
         $.get('/rate',function(data){
+            console.log(typeof data);
             console.log(data);
             let prettyData = `
             Fixed Fare = Rs. ${data.fixed} for ${data.minKm} KM

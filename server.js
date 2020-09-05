@@ -12,7 +12,7 @@ const path = require('path');
 
 app.get("/ ", (req,res)=>{
     console.log("hello");
-   // let mssg = fareUtils.returnHello();
+  
    res.send('<h1 style="color:red;">hello world <h1> ')
 })
 
@@ -28,7 +28,4 @@ app.get('/rate',(req,res)=>{
     console.log("rate is called")
     res.send(fareUtils.rate);
 })
-
-app.listen(2222,()=>{
-    console.log("server started at http://localhost:2222");
-})
+exports = module.exports = app
